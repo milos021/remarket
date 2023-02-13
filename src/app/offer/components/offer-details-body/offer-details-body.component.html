@@ -1,0 +1,25 @@
+<div class="offer-details">
+  <div class="offer-details__content">
+
+  <div class="offer-details__img">
+    <img [src]="offer.imageUrl" />
+  </div>
+
+  <div class="offer-details__info">
+    <p>Name: {{ offer.name }}</p>
+    <p>Description: {{ offer.description }}</p>
+    <p>Votes: {{ offer.votes }}</p>
+    <app-vote
+    (voteUp)="voteForOffer(offer.id, (offer.votes + 1))"
+    (voteDown)="voteForOffer(offer.id, (offer.votes - 1))"
+    ></app-vote>
+    <a routerLink="/" >Back to Offers List</a>
+  </div>
+
+  </div>
+
+  <app-button
+  text="Add to cart"
+  (clicked)="addProductToCart(offer)"
+  ></app-button>
+</div>

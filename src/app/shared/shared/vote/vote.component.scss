@@ -1,0 +1,19 @@
+.vote-wrapper {
+  display: flex;
+}
+
+.vote {
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.vote--up {
+  background-image: url('/assets/images/icons8-thumbs-up-30.png');
+  background-repeat: no-repeat;
+}
+
+.vote--down {
+  background-image: url('/assets/images/icons8-thumbs-down-30.png');
+  background-repeat: no-repeat;
+}

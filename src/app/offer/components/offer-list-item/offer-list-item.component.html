@@ -1,0 +1,23 @@
+<div class="offer-list-item">
+  <div class="offer-list-item__votes">
+    {{offer.votes}}
+  </div>
+
+  <div class="offer-list-item__info">
+    <h4>{{ offer.name }}</h4>
+    <a [routerLink]="offer.id">See details</a>
+  </div>
+  <div class="offer-list-item__vote">
+    <app-vote
+    (voteUp)="voteForOffer(offer.id, (offer.votes + 1))"
+    (voteDown)="voteForOffer(offer.id, (offer.votes - 1))"
+    ></app-vote>
+  </div>
+
+  <div class="offer-list-item__button-wrapper">
+    <app-button
+    text="Add to cart"
+    (clicked)="addProductToCart(offer)"
+    ></app-button>
+  </div>
+</div>

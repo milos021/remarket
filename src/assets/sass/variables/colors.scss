@@ -1,0 +1,37 @@
+:root {
+  // Color palette
+  --black-transparent: rgba(0, 0, 0, 0.65);
+  --gray-1: rgb(59, 59, 59);
+  --gray-2: rgb(84, 89, 95);
+  --gray-3: rgb(146, 146, 146);
+  --gray-4: rgb(191, 191, 191);
+  --gray-5: rgb(204, 204, 204);
+  --gray-6: rgb(244, 244, 246);
+  --gray-7: rgb(77, 77, 77);
+  --turqoise: hsl(183, 47%, 59%);
+  --coral: rgb(234, 102, 118);
+  --coral-2: rgb(199, 93, 106);
+  --coral-pale: rgb(234, 102, 118, 0.2);
+  --red-1: rgb(230, 3, 3);
+  --red-pale: rgb(230, 3, 3, 0.17);
+  --yellow: rgb(239, 158, 6);
+  --yellow-transparent: rgb(239, 158, 6, 0.25);
+  --blue: rgb(48, 147, 232);
+  --green: rgb(103, 181, 12);
+  --green-pale: rgba(103, 181, 12, 0.17);
+  --dark-green: rgb(89, 156, 14);
+  --white: rgb(255, 255, 255);
+  --white-transparent: rgba(255, 255, 255, 0.65);
+  --transparent: rgba(0, 0, 0, 0);
+
+  // Color variables
+  --auth-top-menu-bg-color: var(--black-transparent);
+  --accent-color: var(--coral);
+  --accent-color--hover: var(--coral-2);
+  --body-text-color: var(--gray-1);
+  --body-bg-color: var(--gray-6);
+  --error-color: var(--red-1);
+  --light-border-color: var(--gray-5);
+  --success-color: var(--green);
+  --warning-color: var(--yellow);
+}

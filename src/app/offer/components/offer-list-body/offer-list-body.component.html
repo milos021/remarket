@@ -1,0 +1,5 @@
+<app-offer-list-item *ngFor="let offer of offers | sortBy: 'desc':'votes'"
+[offer]="offer"
+[voteForOffer]="voteForOffer"
+[addProductToCart]="addProductToCart"
+></app-offer-list-item>

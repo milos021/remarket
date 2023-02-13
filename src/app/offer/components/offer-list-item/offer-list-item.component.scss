@@ -1,0 +1,28 @@
+.offer-list-item {
+  position: relative;
+  display: flex;
+  padding: var(--space-s);
+  border: 1px solid var(--light-border-color);
+  margin-bottom: var(--space-default);
+}
+
+.offer-list-item__votes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 var(--space-s);
+  border-right: 1px solid var(--light-border-color);
+  margin-right: var(--space-s);
+}
+
+.offer-list-item__vote {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.offer-list-item__button-wrapper {
+  position: absolute;
+  bottom: 10px;
+  right: 5px;
+}
